@@ -11,76 +11,114 @@
     <title>Youtube</title>
   </head>
   <body>
-    <nav>
-      <i class="fab fa-youtube"></i>
-      <a href="#">Youtube</a>
-      <i class="fas fa-search"></i>
-      <i class="fas fa-ellipsis-v"></i>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <i class="fab fa-youtube"></i> <a href="#">Youtube</a>
+      </div>
+      <ul class="navbar__icon">
+        <li><i class="fas fa-search"></i></li>
+        <li><i class="fas fa-ellipsis-v"></i></li>
+      </ul>
     </nav>
-    <main>
-      <section class="content">
-        <img src="./assets/imgs/video.PNG" alt="video" />
-      </section>
-      <section class="contentMeta">
-        <div class="hashtag">#DreamCoding #DreamCoders #Ellie</div>
-        <p>
-          Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라
-          만들기 | 프론트엔드 개발자 입문편 : HTML, CSS, Javascript
-        </p>
-        <p><span>1M views</span> <span>1 month ago</span></p>
-        <ul>
-          <li><a href="#"></a><i class="fas fa-thumbs-up"></i></li>
-          <li><a href="#"></a><i class="fas fa-thumbs-down"></i></li>
-          <li><a href="#"></a><i class="fas fa-share"></i></li>
-          <li><a href="#"></a><i class="fas fa-plus"></i></li>
-          <li><a href="#"></a><i class="fas fa-flag"></i></li>
-        </ul>
-        <div class="author">
-          <img
-            src="./assets/imgs/profile.jpg"
-            alt="author__profile"
-            class="profile"
-          />
-          <p class="author__name">드림코딩 by 엘리</p>
-          <p>1M subscribers</p>
-        </div>
-      </section>
-      <section class="upnext">
-        <p>Up next</p>
-        <ui>
-          <li>
-            <img src="./assets/imgs/upnext1.png" alt="upnext1" />
-            <p>
-              프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발 입문자편
-              강의를 시작합니다. (HTML, CSS, Javascript + 실전 프로젝트)
+    <main class="content">
+      <img class="video" src="./assets/imgs/video.PNG" alt="video" />
+      <div class="info">
+        <section class="meta">
+          <div class="meta__detail">
+            <p class="hashtag">
+              <a href="#">#DreamCoding</a>
+              <a href="#">#DreamCoders</a>
+              <a href="#">#Ellie</a>
             </p>
-            <p>드림코딩 by 엘리</p>
-            <p>82K views</p>
-          </li>
-        </ui>
-        <ui>
-          <li>
-            <img src="./assets/imgs/upnext2.png" alt="upnext2" />
-            <p>
-              HTML 기초, React 할 때 꼭 필요한 팁! 쉽다고 무시하면 안돼요. |
-              프론트엔드 개발자 입문편: HTML, CSS, Javascript
+            <p class="title">
+              Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라
+              만들기 | 프론트엔드 개발자 입문편 : HTML, CSS, Javascript
             </p>
-            <p>드림코딩 by 엘리</p>
-            <p>82K views</p>
-          </li>
-        </ui>
-        <ui>
-          <li>
-            <img src="./assets/imgs/upnext3.png" alt="upnext3" />
-            <p>
-              HTML 태그 완성, 웹 포트폴리오 만들기 전에 꼭 보세요 | 프론트엔드
-              개발자 입문편: HTML, CSS, Javascript
-            </p>
-            <p>드림코딩 by 엘리</p>
-            <p>82K views</p>
-          </li>
-        </ui>
-      </section>
+            <p><span>1M views</span> <span>1 month ago</span></p>
+          </div>
+          <ul class="actions">
+            <li>
+              <a href="#"></a><i class="fas fa-thumbs-up"></i>
+              <p>1K</p>
+            </li>
+            <li>
+              <a href="#"></a><i class="fas fa-thumbs-down"></i>
+              <p>0</p>
+            </li>
+            <li>
+              <a href="#"></a><i class="fas fa-share"></i>
+              <p>Share</p>
+            </li>
+            <li>
+              <a href="#"></a><i class="fas fa-plus"></i>
+              <p>Save</p>
+            </li>
+            <li>
+              <a href="#"></a><i class="fas fa-flag"></i>
+              <p>Report</p>
+            </li>
+          </ul>
+          <div class="author">
+            <img
+              src="./assets/imgs/profile.jpg"
+              alt="author__profile"
+              class="profile"
+            />
+            <div class="author__detail">
+              <p class="name">드림코딩 by 엘리</p>
+              <p class="subscribers">1M subscribers</p>
+            </div>
+            <a href="#" class="subscribeBtn">SUBSCRIBE</a>
+          </div>
+        </section>
+        <section class="upnext">
+          <p>Up next</p>
+          <ui>
+            <li>
+              <img src="./assets/imgs/upnext1.png" alt="upnext1" />
+              <div>
+                <p class="upnext__title">
+                  프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발
+                  입문자편 강의를 시작합니다. (HTML, CSS, Javascript + 실전
+                  프로젝트)
+                </p>
+                <p class="upnext__author">드림코딩 by 엘리</p>
+                <p class="upnext__viewer">82K views</p>
+              </div>
+              <i class="fas fa-ellipsis-v"></i>
+            </li>
+          </ui>
+          <ui>
+            <li>
+              <img src="./assets/imgs/upnext2.png" alt="upnext2" />
+              <div>
+                <p class="upnext__title">
+                  HTML 기초, React 할 때 꼭 필요한 팁! 쉽다고 무시하면 안돼요. |
+                  프론트엔드 개발자 입문편: HTML, CSS, Javascript
+                </p>
+                <p class="upnext__author">드림코딩 by 엘리</p>
+                <p class="upnext__viewer">82K views</p>
+              </div>
+              <i class="fas fa-ellipsis-v"></i>
+            </li>
+          </ui>
+          <ui>
+            <li>
+              <img src="./assets/imgs/upnext3.png" alt="upnext3" />
+              <div>
+                <p class="upnext__title">
+                  HTML 태그 완성, 웹 포트폴리오 만들기 전에 꼭 보세요 |
+                  프론트엔드 개발자 입문편: HTML, CSS, Javascript
+                </p>
+                <p class="upnext__author">드림코딩 by 엘리</p>
+                <p class="upnext__viewer">82K views</p>
+              </div>
+              <i class="fas fa-ellipsis-v"></i>
+            </li>
+          </ui>
+        </section>
+      </div>
     </main>
+    <footer></footer>
   </body>
 </html>
